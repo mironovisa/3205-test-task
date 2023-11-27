@@ -38,10 +38,8 @@ export const search = async (email: string, number: string): Promise<SearchResul
   });
 
   if (filteredResults.length > 0) {
-    console.log("Filtered results:", filteredResults);
     return { data: filteredResults };
   } else {
-    console.log("No match found for the combination.");
     return { error: "No match for the combination, check your data" };
   }
 };

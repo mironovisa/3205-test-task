@@ -43,7 +43,6 @@ const App = () => {
         email,
         number,
       });
-      console.log(response.data.data[0]);
       if (response.data.error) {
         alert(response.data.error);
       } else {
